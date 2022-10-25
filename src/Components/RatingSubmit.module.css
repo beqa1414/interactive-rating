@@ -1,0 +1,50 @@
+.submitted{
+    width: 412px;
+    height: 416px;
+    background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+    border-radius: 30px;
+    padding: 40px;
+    margin: 20px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+}
+.img_icon{
+display: flex;
+width: 100%;
+justify-content: center;
+}
+.selected{
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    color: #FC7614;
+    background: #262E38;
+    border-radius: 22.5px;
+    width: 193px;
+    height: 30px;
+   justify-content: center;
+   text-align: center;
+   margin: 0 auto;
+}
+.thanks{
+font-family: 'Overpass';
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 35px;
+color: #FFFFFF;
+text-align: center;
+}
+.text{
+font-family: 'Overpass';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 24px;
+text-align: center;
+color: #969FAD;
+}

@@ -1,24 +1,32 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Rating from './Components/Rating'
+import RatingSubmit from './Components/RatingSubmit';
+
 
 function App() {
+  const [nums,setNums] = useState([1,2,3,4,5])
+  const [selectedNum,setSelectNum] = useState(null)
+  const [selected,setIsSelected] = useState(false)
   return (
+   
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       {!selected && (
+      <Rating
+      nums={nums}
+      setNums={setNums}
+      selectNum={selectedNum}
+      setSelectedNum={setSelectNum}
+      setIsSelected={setIsSelected}
+      
+    /> )}
+
+{selected && <RatingSubmit selectedNum={selectedNum}/>}
+     
+
     </div>
+    
+  
   );
 }
 

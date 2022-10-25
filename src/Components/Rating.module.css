@@ -1,0 +1,136 @@
+
+.card{
+    width: 412px;
+    height: 416px;
+    background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+    border-radius: 30px;
+    padding: 40px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+}
+/* .oval{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    
+} */
+.star_icon{
+    background-color:  #262E38;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+.title{
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35px;
+    color: rgb(255, 255, 255)!important;
+}
+.text{
+    font-family: 'Overpass';
+    height: 72px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    font-style: normal;
+    /* margin-top: calc(50% - 72px/2 - 12px);; */
+    color: #969FAD;
+}
+.numbers{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.num_ovals{
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    background: #262E38;
+    display: flex;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    align-items: center;
+   cursor: pointer;
+   color: #7c8798;
+   font-family: 'Overpass';
+   justify-content: center;
+   transition:all 0.2s linear
+}
+.num_ovals:hover{
+    background-color: #7c8798;
+    color:  #fff;
+}
+
+.num_active{
+background-color: #FC7614!important;
+color: #fff!important;
+}
+.submit{
+    font-family: 'Overpass';
+    font-style: normal;
+    width: 341px;
+    height: 45px;
+    border-radius: 22.5px;
+    background: #FFFFFF;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: 2px;
+    color:  #FC7614;
+    cursor: pointer;
+    transition: all 0.3s;
+
+}
+.submit:hover{
+    background-color: #FC7614;
+    color: #fff;
+}
+
+@media screen and (max-width: 425px){
+    .card{
+        width: 360px;
+        height: 450px;
+    }
+    .submit{
+    width: 100%;
+    }
+
+    @media screen and (max-width: 382px){
+        .card{
+            width: 340px;
+            height: 450px;
+        }
+        .submit{
+            width: 100%;
+        }
+        .num_ovals{
+            width: 45px;
+            height: 45px;
+        }
+
+    }
+    @media screen and (max-width: 347px){
+        .card{
+            width: 310px;
+            height: 500px;
+        }
+        .submit{
+            width: 100%;
+        }
+        .num_ovals{
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
