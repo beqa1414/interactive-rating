@@ -71,8 +71,8 @@
 }
 
 .num_active{
-background-color: #FC7614!important;
-color: #fff!important;
+background-color: #FC7614;
+/* color: #fff!important; */
 }
 .submit{
     font-family: 'Overpass';
@@ -80,36 +80,38 @@ color: #fff!important;
     width: 341px;
     height: 45px;
     border-radius: 22.5px;
-    background: #FFFFFF;
+    background: #FC7614;
     border: none;
     outline: none;
     font-weight: 700;
     font-size: 15px;
     line-height: 19px;
     letter-spacing: 2px;
-    color:  #FC7614;
+    color:  #FFFFFF;
     cursor: pointer;
     transition: all 0.3s;
 
 }
 .submit:hover{
-    background-color: #FC7614;
-    color: #fff;
+    background-color: #fff!important;
+    color: #FC7614;
 }
 
 @media screen and (max-width: 425px){
     .card{
-        width: 360px;
-        height: 450px;
+        width: 380px;
+        height: 400px;
     }
     .submit{
     width: 100%;
     }
+}
+    
 
     @media screen and (max-width: 382px){
         .card{
             width: 340px;
-            height: 450px;
+            height: 400px;
         }
         .submit{
             width: 100%;
@@ -120,17 +122,17 @@ color: #fff!important;
         }
 
     }
-    /* @media screen and (max-width: 347px){
+    @media screen and (max-width: 347px){
         .card{
-            width: 310px;
-           
+           width: 310px;
+           height: 400px;
         }
-        /* .submit{
+         .submit{
             width: 100%;
         }
         .num_ovals{
             width: 40px;
             height: 40px;
-        } */
-    
-}
+        }
+    }
+

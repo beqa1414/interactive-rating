@@ -10,7 +10,7 @@ function Rating({selectedNum,setSelectedNum,setIsSelected}) {
   }
 
   const HendleSubmit = () =>{
-    setIsSelected(true)
+    setIsSelected(false)
   }
  
   return (
