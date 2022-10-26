@@ -120,17 +120,17 @@ color: #fff!important;
         }
 
     }
-    @media screen and (max-width: 347px){
+    /* @media screen and (max-width: 347px){
         .card{
             width: 310px;
-            height: 500px;
+           
         }
-        .submit{
+        /* .submit{
             width: 100%;
         }
         .num_ovals{
             width: 40px;
             height: 40px;
-        }
-    }
+        } */
+    
 }
