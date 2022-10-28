@@ -26,7 +26,6 @@ function Rating({selectedNum,setSelectedNum,setIsSelected}) {
 support request. All feedback is appreciated 
 to help us improve our offering!</p>
 <div className={styles.numbers}>
-  {/* <span className={`${styles.num_ovals} ${styles.num_ovals_1} ${selectedNum === "1" && styles.active_num}`} onClick={selectNum}>1</span> */}
   <span className={`${styles.num_ovals}  ${selectedNum === '1' && styles.num_active}`} onClick={selectNum}>1</span>
   <span className={`${styles.num_ovals}  ${selectedNum === '2' && styles.num_active}`} onClick={selectNum}>2</span>
   <span className={`${styles.num_ovals}  ${selectedNum === '3' && styles.num_active}`} onClick={selectNum}>3</span>

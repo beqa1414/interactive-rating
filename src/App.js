@@ -5,7 +5,6 @@ import RatingSubmit from './Components/RatingSubmit';
 
 
 function App() {
-  const [nums,setNums] = useState([1,2,3,4,5])
   const [selectedNum,setSelectNum] = useState(null)
   const [selected,setIsSelected] = useState(false)
   return (
@@ -13,8 +12,6 @@ function App() {
     <div className="App">
        {!selected && (
       <Rating
-      nums={nums}
-      setNums={setNums}
       selectedNum={selectedNum}
       setSelectedNum={setSelectNum}
       setIsSelected={setIsSelected}
