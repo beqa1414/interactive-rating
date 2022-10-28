@@ -15,7 +15,7 @@ function App() {
       <Rating
       nums={nums}
       setNums={setNums}
-      selectNum={selectedNum}
+      selectedNum={selectedNum}
       setSelectedNum={setSelectNum}
       setIsSelected={setIsSelected}
       

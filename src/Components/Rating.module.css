@@ -9,13 +9,13 @@
     display: flex;
     justify-content: space-between;
 }
-/* .oval{
+.oval{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: left;
     
-} */
+}
 .star_icon{
     background-color:  #262E38;
     width: 48px;
@@ -57,7 +57,7 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: 0.2px;
+    letter-spacing: 0.3px;
     align-items: center;
    cursor: pointer;
    color: #7c8798;
@@ -70,9 +70,10 @@
     color:  #fff;
 }
 
-.num_active{
-background-color: #FC7614;
-/* color: #fff!important; */
+
+.active_num{
+background-color: #FC7614!important;
+color: #FFF;
 }
 .submit{
     font-family: 'Overpass';
@@ -99,8 +100,8 @@ background-color: #FC7614;
 
 @media screen and (max-width: 425px){
     .card{
-        width: 380px;
-        height: 400px;
+        width: 370px;
+        height: 456px;
     }
     .submit{
     width: 100%;
@@ -110,29 +111,29 @@ background-color: #FC7614;
 
     @media screen and (max-width: 382px){
         .card{
-            width: 340px;
-            height: 400px;
+            width: 330px;
+            height: 456px;
         }
         .submit{
             width: 100%;
         }
         .num_ovals{
-            width: 45px;
-            height: 45px;
+            width: 45px!important;
+            height: 45px!important;
         }
 
     }
     @media screen and (max-width: 347px){
         .card{
            width: 310px;
-           height: 400px;
+           height: 456px;
         }
          .submit{
             width: 100%;
         }
         .num_ovals{
-            width: 40px;
-            height: 40px;
+            width: 45px!important;
+            height: 45px!important;
         }
     }
 
