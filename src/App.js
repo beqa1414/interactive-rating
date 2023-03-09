@@ -4,15 +4,15 @@ import Rating from "./Components/Rating";
 import RatingSubmit from "./Components/RatingSubmit";
 
 function App() {
-  const [selectedNum, setSelectNum] = useState(null);
+  const [selectedNum, setSelectNum] = useState(0);
   const [selected, setIsSelected] = useState(false);
 
   const selectNum = (e) => {
     setSelectNum(e.target.innerText);
   };
 
-  const handleSubmit = () => {
-    setIsSelected(true);
+  const handleSubmit = (select) => {
+    setIsSelected(select);
   };
   return (
     <div className="App">
@@ -29,7 +29,14 @@ function App() {
         />
       )}
 
-      {selected && <RatingSubmit selectedNum={selectedNum} />}
+      {selected && (
+        <RatingSubmit
+          selectedNum={selectedNum}
+          title="Thank you!"
+          text="We appreciate you taking the time to give a rating. If you ever need
+        more support, don’t hesitate to get in touch!"
+        />
+      )}
     </div>
   );
 }
