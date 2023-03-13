@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./Rating.module.css";
-// import star from "../Images/icon-star.svg";
 
 function Rating({ selectedNum, selectNum, handleSubmit, title, text, star }) {
   return (

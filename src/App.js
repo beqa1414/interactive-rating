@@ -3,13 +3,14 @@ import "./App.css";
 import Rating from "./Components/Rating";
 import RatingSubmit from "./Components/RatingSubmit";
 import star from "./Images/icon-star.svg";
+import img_mobile from "./Images/illustration-thank-you.svg";
 
 function App() {
   const [selectedNum, setSelectNum] = useState(null);
   const [selected, setIsSelected] = useState(false);
 
   const selectNum = (e) => {
-    setSelectNum(e.target.innerText);
+    setSelectNum(e.target.value);
   };
 
   const handleSubmit = (selecte) => {
@@ -37,6 +38,7 @@ function App() {
           title="Thank you!"
           text="We appreciate you taking the time to give a rating. If you ever need
           more support, don’t hesitate to get in touch!"
+          img_mobile={img_mobile}
         />
       )}
     </div>
