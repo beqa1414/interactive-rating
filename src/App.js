@@ -10,11 +10,11 @@ function App() {
   const [selected, setIsSelected] = useState(false);
 
   const selectNum = (e) => {
-    setSelectNum(e.target.value);
+    setSelectNum(e.target.innerText);
   };
 
-  const handleSubmit = (selecte) => {
-    setIsSelected(selecte);
+  const handleSubmit = (select) => {
+    setIsSelected(select);
   };
   return (
     <div className="App">
