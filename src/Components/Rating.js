@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./Rating.module.css";
-import star from "../Images/icon-star.svg";
+// import star from "../Images/icon-star.svg";
 
-function Rating({ selectedNum, selectNum, handleSubmit, title, text }) {
+function Rating({ selectedNum, selectNum, handleSubmit, title, text, star }) {
   return (
-    <div className={styles.card}>
+    <div className="card" style={mainCard.card}>
       <div className={styles.oval}>
         <div className={styles.star_icon}>
           <img src={star} alt="start_icon" />
@@ -61,5 +61,19 @@ function Rating({ selectedNum, selectNum, handleSubmit, title, text }) {
     </div>
   );
 }
+
+const mainCard = {
+  card: {
+    width: "412px",
+    height: "416px",
+    background:
+      "radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%)",
+    borderRadius: "30px",
+    padding: "40px",
+    flexDirection: "column",
+    display: "flex",
+    justifyContent: "space-between",
+  },
+};
 
 export default Rating;
